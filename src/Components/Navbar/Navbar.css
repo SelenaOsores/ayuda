@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    max-width: 1000px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 70%;
+}
+
+.nav img {
+    max-width: 150px;
+    height: 70%;
+    max-height: 68px;
+    padding: 0;
+}
+
+#imagen {
+    padding: 0;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-horizontal li {
+    position: relative; /* Añadido para que el submenú se posicione correctamente */
+}
+
+.menu-horizontal li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-horizontal li:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.menu-vertical {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Posicionado debajo del elemento principal */
+    left: 0;
+    list-style: none;
+    background-color: black;
+    padding: 10px 0;
+
+}
+.menu-vertical li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Mostrar el menú vertical cuando se hace hover en el elemento principal */
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
