@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 
 export const Navbar = () => {
+
+    const [menu, setMenu] = useState("inicio")
   return (
     <div className='navbar'>
         <div className='nav'>
@@ -15,7 +17,7 @@ export const Navbar = () => {
                         <li><a href="#">Producciones</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Servicios</a>
+                <li onClick={()=>{setMenu("shop")}}><a href="#">Servicios</a>
                     <ul className='menu-vertical'>
                         <li><a href="#">Lavado</a></li>
                         <li><a href="#">Corte</a></li>
