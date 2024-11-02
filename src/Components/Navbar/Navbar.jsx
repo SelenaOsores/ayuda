@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
 
@@ -9,15 +10,15 @@ export const Navbar = () => {
     <div className='navbar'>
         <div className='nav'>
 
-            <ul className='menu-horizontal'>
-                <li><a id='imagen' href="#"><img src={logo} alt="" /></a></li>
-                <li><a href="#">Nosotros</a>
+            <ul className='menu-horizontal' onClick={()=>{setMenu("inicio")}}>
+                <li><Link to="/"><img src={logo} alt="" /></Link></li>
+                <li>Nosotros
                     <ul className='menu-vertical'>
-                        <li><a href="#">Historia</a></li>
-                        <li><a href="#">Producciones</a></li>
+                        <li><Link  to="/nosotrosHistoria">Historia</Link></li>
+                        <li><Link to="/nosotrosProd">Producciones</Link></li>
                     </ul>
                 </li>
-                <li onClick={()=>{setMenu("shop")}}><a href="#">Servicios</a>
+                <li onClick={()=>{setMenu("servicios")}}><Link to="/servicios">Servicios</Link>
                     <ul className='menu-vertical'>
                         <li><a href="#">Lavado</a></li>
                         <li><a href="#">Corte</a></li>
@@ -26,16 +27,15 @@ export const Navbar = () => {
                         <li><a href="#">Tratamientos</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Turnos</a>
+                <li>Turnos
                     <ul className='menu-vertical'>
-                        <li><a href="#">Lista de precios</a></li>
-                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><Link to="/turnosLista">Lista de precios</Link></li>
+                        <li><Link to="/turnosTerm">Terminos y condiciones</Link></li>
                     </ul>
                 </li>
             </ul>
             <div className="login-register">
-                <button>Iniciar sesion</button>
-                <button>Registrarse</button>
+                <Link to="/loginSignUp"><button>Iniciar sesion</button></Link>
             </div>
         </div>
     </div>
