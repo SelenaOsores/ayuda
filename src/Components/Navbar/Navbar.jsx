@@ -10,34 +10,34 @@ export const Navbar = () => {
             <div className='nav'>
                 <ul className='menu-horizontal' onClick={() => { setMenu("inicio") }}>
                     <li>
-                        <Link style={{ textDecoration: 'none' }} to="/"><img src={logo} alt="" /></Link>
+                        <Link className = 'link' style={{ textDecoration: 'none' }} to="/"><img src={logo} alt="" /></Link>
                     </li>
                     <li>
                         <span>Nosotros</span>
                         <ul className='menu-vertical'>
-                            <li><Link style={{ textDecoration: 'none' }} to="/nosotrosHistoria">Historia</Link></li>
-                            <li><Link style={{ textDecoration: 'none' }} to="/nosotrosProd">Producciones</Link></li>
+                            <li><Link className = 'link' style={{ textDecoration: 'none' }} to="/nosotrosHistoria">Historia</Link></li>
+                            <li><Link className = 'link' style={{ textDecoration: 'none' }} to="/nosotrosProd">Producciones</Link></li>
                         </ul>
                     </li>
                     <li onClick={() => { setMenu("servicios") }}>
-                        <Link style={{ textDecoration: 'none' }} to="/servicios">Servicios</Link>
+                        <Link className = 'link' style={{ textDecoration: 'none' }} to="/servicios">Servicios</Link>
                         <ul className='menu-vertical'>
-                            <li><a href="#">Lavado</a></li>
-                            <li><a href="#">Corte</a></li>
-                            <li><a href="#">Peinado</a></li>
-                            <li><a href="#">Coloracion</a></li>
-                            <li><a href="#">Tratamientos</a></li>
+                            <li><a href="#lavado">Lavado</a></li>
+                            <li><a href="#corte">Corte</a></li>
+                            <li><a href="#peinado">Peinado</a></li>
+                            <li><a href="#coloracion">Coloracion</a></li>
+                            <li><a href="#tratamientos">Tratamientos</a></li>
                         </ul>
                     </li>
                     <li>
                         <span>Turnos</span>
                         <ul className='menu-vertical'>
-                            <li><Link style={{ textDecoration: 'none' }} to="/turnosLista">Lista de precios</Link></li>
-                            <li><Link style={{ textDecoration: 'none' }} to="/turnosTerm">Términos y condiciones</Link></li>
+                            <li><Link className = 'link' style={{ textDecoration: 'none' }} to="/turnosLista">Lista de precios</Link></li>
+                            <li><Link className = 'link' style={{ textDecoration: 'none' }} to="/turnosTerm">Términos y condiciones</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <Link style={{ textDecoration: 'none' }} to="/loginSignUp">
+                        <Link className = 'link' style={{ textDecoration: 'none' }} to="/loginSignUp">
                             <button className="login-button">Iniciar sesión</button>
                         </Link>
                     </li>

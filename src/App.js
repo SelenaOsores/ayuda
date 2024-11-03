@@ -8,6 +8,7 @@ import { NosotrosProd} from './Pages/NosotrosProd';
 import { TurnosLista } from './Pages/TurnosLista';
 import { TurnosTerm } from './Pages/TurnosTerm';
 import { LoginSignUp } from './Pages/LoginSignUp';
+import { Footer } from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/loginSignUp' element={<LoginSignUp/>}/>
       </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
