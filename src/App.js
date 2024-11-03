@@ -11,11 +11,11 @@ import { LoginSignUp } from './Pages/LoginSignUp';
 
 function App() {
   return (
-    <div >
+    <div>
       <BrowserRouter>
       <Navbar/>
       <Routes>
-      <Route path='/' element={<Inicio/>}/>
+        <Route path='/' element={<Inicio/>}/>
         <Route path='/servicios' element={<Servicios/>}/>
         <Route path='/nosotrosHistoria' element={<nosotrosHistoria/>}/>
         <Route path='/nosotrosProd' element={<nosotrosProd/>}/>

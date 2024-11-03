@@ -16,7 +16,7 @@
 .nav img {
     max-width: 150px;
     height: 70%;
-    max-height: 68px;
+    max-height: 40px;
     padding: 0;
 }
 
@@ -67,4 +67,20 @@
 /* Mostrar el menú vertical cuando se hace hover en el elemento principal */
 .menu-horizontal li:hover .menu-vertical {
     display: block;
+}
+
+.login-button {
+    padding: 10px 15px;
+    background-color: #ffffffc9; /* Cambia el color de fondo según tu preferencia */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0.204);
+    color: white;
 }
